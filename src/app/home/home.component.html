@@ -1,0 +1,59 @@
+<progress-bar [progress]="progressValue" [color]="'#488aff'">
+</progress-bar>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>employee_name</th>
+            <th>employee_address</th>
+            <th>employee_contact</th>
+            <th>employee_email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.employee_name}}</td>
+            <td>{{employee.employee_address}}</td>
+            <td>{{employee.employee_contact}}</td>
+            <td>{{employee.employee_email}}</td>
+            <td>  
+                <button type="submit" (click)="viewEmployee(employee)" class="btn btn-success" data-toggle="modal" data-target="#myModal">view</button>
+                <button type="submit" (click)="getEmployee(employee)"class="btn btn-info">Update</button>
+                <button type="button" (click)="deleteemployee(employee.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h4 class="modal-title">Employee Info</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div>
+              Name : {{emp.employee_name}}
+          </div>
+          <div>
+            Address : {{emp.employee_address}}
+        </div>
+        <div>
+            Contact Details : {{emp.employee_contact}}
+        </div>
+        <div>
+            Email : {{emp.employee_email}}
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close-modal" data-dismiss="modal" style="display: none">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

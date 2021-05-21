@@ -1,0 +1,26 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "employee_name": "Sebastian",
+        "employee_address":"at.post nahad",
+        "employee-contact": "9943568722",
+        "employee_email": "sebastian@codingthesmartway.com"
+      },
+      {
+        "id": 2,
+        "employee_name": "Sebastian",
+        "employee_address":"at.post nahad",
+        "employee-contact": "4433668877",
+        "employee_email": "sebastidfghran@gmail.com"
+         },
+      {
+        "id": 3,
+        "employee_name": "Santosh",
+        "employee_address":"at.post vasmat",
+        "employee-contact": "9958940388",
+        "employee_email": "sebasn@codingthesmartway.com"
+     
+      }
+    ]
+  }
