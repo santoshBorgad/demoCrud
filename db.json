@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "employee_name": "SOPAN ASHOKRAO BORGAD",
-      "employee_address": "A/P nahad tal Basmath",
-      "employee_contact": 2345678,
-      "employee_email": "anil@gmail.com",
-      "id": 1
-    },
-    {
       "employee_name": "santosh navnath borgad",
       "employee_address": "AP nahad",
       "employee_contact": 123333333334567890,
